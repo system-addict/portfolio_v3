@@ -1,0 +1,156 @@
+/**********************************************************************************
+	contains information regarding row structure
+**********************************************************************************/
+/************************************************************/
+/*previously:
+	body{background-color:rgba(0,0,0,0.7);}*/
+
+/**********************************************************************************
+	ROW HEIGHT CLASSES:
+**********************************************************************************/
+/* TO MANAGE ROW HEIGHT, should prob do something like:
+row-short, row-tall row-hero*/
+.row-sml{ height:100px; /*arbitrary*/ height:31vmin; }
+.row-med{ height:200px; /*arbitrary*/ height:62vmin; }
+.row-lrg{ height:300px; /*arbitrary*/ height:93vmin; }
+.row-hero{}
+
+.v-padded{ padding-top:7em;padding-bottom:7em; }
+
+/* SCAFFOLDING: ROWS */
+.row1{}
+.row2{}
+
+/**********************************************************************************
+	SPECIFIC ROWS: 
+ - consider making ids.
+**********************************************************************************/
+/* ANCHORS-LG ***********************************************/
+.anchors-lg{
+	margin: auto 5em;
+	margin: auto 10vmin;
+}
+
+/* CLIENTS + *********************************************************************/
+.clients{ 
+	background:white; 
+	height:100px; /*arbitrary*/
+	height:31vmin;
+	z-index: 5;
+	position: relative;
+	bottom:-50px; /*arbitrary*/
+	bottom:-15.5vmin;
+}
+.clients>*{padding:.5rem;}
+.clients>*:first-child{padding-top:2.2rem;}
+.clients>*:last-child {padding-bottom:2.2rem;}
+.clients>img{max-width:100%;}
+
+.clients + .row{ /*relative to above*/
+	    -webkit-filter:opacity(30%);
+            filter:opacity(30%);
+    padding-top:12rem;
+	/*background:#5a5a5a;*/
+	background:#464646;
+/*	position: relative;
+	top:-50px;
+	top:-15.5vmin;*/
+	z-index:4;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,373a3c+100 */
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgb(125,126,125) 0%, rgb(55,58,60) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgb(125,126,125) 0%,rgb(55,58,60) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgb(125,126,125) 0%,rgb(55,58,60) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#373a3c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* FOOTER + **********************************************************************/
+footer{
+	height:20rem;/* untested */
+	min-height: 61.8vmin; height:61.8vmin; 
+
+	background:url("../../img/footer/footer-1_main.png");
+	background-position: center;
+	background-size:cover;
+	background-attachment:local;
+	background-position:bottom;
+	background-color:black;
+	background-color:rgba(70,70,70,0.8);
+
+	background:url("../../img/footer/footer-1_main.png")
+				top center / cover 
+				no-repeat local 
+				rgba(70,70,70,0.8);
+ }
+
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	border-top:double;
+	border-bottom:double;
+border-width: 33px;
+/*box-sizing:all;*/
+}
+
+footer::after{
+ 	content:'';
+ 	background:url("../../img/footer/footer-1_main.png");
+ }
+footer:hover::after, footer:focus::after {
+  animation: fadeOut 5s forwards;
+}
+footer>div{}
+ footer::before{
+ 	content:'';
+ 	background:url("../../img/footer/footer-0_intro.png");
+ }
+
+#background, #background img{
+	position:fixed;
+	top: 0;left: 0;bottom: 0;right: 0;
+
+	height:135%;width:100%;
+	background-color:rgb(44,44,44);
+
+/*	filter:blur(15px) grayscale(35%);
+	-webkit-filter:blur(1px) grayscale(35%);*/
+	
+	z-index: -1;   
+}
+
+.under-foot{/*also handled in "main, #underfoot" */
+	min-height: 61.8vmin; height:61.8vmin; 
+	padding-top:5vmin;
+/*	background-color:rgb(44,44,44);
+	background:rgba(44,44,44,0.4);*/
+	/*background-image:url("../../img/backgrounds/drought-1920x1280_tinified.jpg");*/
+	   
+/*	background: rgb(44,44,44);
+	background:rgba(44,44,44,0.4);
+	filter:blur(55px) grayscale(20%);
+	-webkit-filter:blur(5px) grayscale(20%);*/
+*/
+	/*background:filter(url(../../img/backgrounds/drought-1920x1280_tinified.jpg));*/
+	/*-webkit-background:filter(url('../../img/backgrounds/drought-1920x1280_tinified.jpg'));*/
+/*background:grey;*/
+	/*-webkit-background:filter(blur(55px));*/
+	/*background:filter(url(../../img/backgrounds/drought-1920x1280_tinified.jpg), blur(5px));*/
+	
+		/*linear-gradient( rgb(211,211,211),rgb(211,211,211) );*/
+	/*linear-gradient(rgba(211,211,211,0.2),rgba(211,211,211,0.2));*/
+	/*url("../../img/backgrounds/drought-1920x1280_tinified.jpg");*/
+	   /*background: rgb(44,44,44);*/
+	   /*background: rgba(211,211,211,0.9); */
+
+/*	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: top;*/
+}
+
+
+/* SCAFFOLDING: COLS */
+.col1{}
+.col2{}

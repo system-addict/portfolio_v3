@@ -1,0 +1,238 @@
+/* ******************************************************** */
+@import dev.css;
+* {margin:0;padding:0;}
+.row{margin-left:0;margin-right:0;} /*bootstart override*/
+
+html{font-size:14;} /* THIS IS FOR USE WITH REM LENGTH SIZING*/
+
+/*should organize by common alterations - containers( wells, margined boxes, etc) */
+
+/* OVERRIDE *********************************************** */
+/* need for sizing %s*/
+/*body{ height:100%;maximum-height:100%; margin:0; border:0;}*/
+main{ 
+	height:100%;
+	maximum-height:100%; 
+	/*margin:0 -15px !important;*/ 
+	padding:0 !important;
+}
+
+.bg-lg-grey{
+	background-color:rgb(144,144,144); background-color:rgba(144,144,144,0.4);
+}
+
+.grey-hover:hover{
+	background-color:rgba(144,144,144, 0.7); 
+}
+.blur-active:active{
+	filter:blur(2px);
+	-webkit-filter:blur(2px);
+}
+.unblur-hover:hover{
+	filter:blur(0px);
+	-webkit-filter:blur(0px);
+}
+.blur-hover:hover{
+	filter:blur(2px);
+	-webkit-filter:blur(2px);
+}
+.transition-p5{
+-o-transition: 0.5s;  
+    -ms-transition: 0.5s;
+    -moz-tranistion: 0.5s;
+    -webkit-transition: 0.5s;
+	transition: 0.5s ease;
+}
+
+.transition-1{
+-o-transition: 1s;  
+    -ms-transition: 1s;
+    -moz-tranistion: 1s;
+    -webkit-transition: 1s;
+	transition: 1s ease;
+}
+.border-small-top{
+	border-color:black;	/*border-color:rgb(44,44,44); */
+	border-top:solid;
+	/*border-bottom:solid;*/
+	border-width:3px;
+}
+.margin-horizontal-1{ margin-left:1rem;margin-right:1rem; }
+.margin-horizontal-2{ margin-left:2rem;margin-right:2rem; }
+.margin-horizontal-scale-5{ 
+	margin-left:5%;margin-right:5%;
+	margin-left:5vh;margin-right:5vh; }
+.margin-horizontal-scale-20{ 
+	margin-left:20%;margin-right:20%;
+	margin-left:20vh;margin-right:20vh; }
+.margin-vertical-1{ margin-top: 3rem; margin:bottom: 3rem; }
+.opacity-50  /* testing */
+{	zoom: 1;filter: alpha(opacity=50);opacity: 0.5;  }
+.pad-p5{padding:.5rem;}
+.pad-vertical-1{ padding-top:1rem;padding-bottom:1rem; }
+.pad-horizontal-1{ padding-left:1rem;padding-right:1rem; }
+.txt-center{ text-align:center; }
+
+img{max-width: 100%;}
+
+
+
+.opac-border{
+	background:rgba(0,0,0,0.9);
+	filter:blur(5px);
+	-webkit-filter:blur(5px);
+	font-size:1rem;
+	line-height: normal;
+	min-width:101%;/*for blur*/
+	min-height:10px;	height:.5rem;height:.4vmin;	max-height:50px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;}
+/* CREATED ***************************************************/
+/* ROW: anchros-lg *******************************************/
+/*.poster-container-1{
+	min-height:90%; height: 190%;
+	min-height:30rem; height: 30rem;
+	WIDTH IS HANDLED BY REINSERTION OF COL HACK FOR SPACING
+}
+.poster-content-1{
+	background:rgb(177,177,177); transparency issue
+	background:rgba(255,255,255,0.2);
+	height: 100%;
+	font-size:medium; 
+	arbitrary, untested
+	font-size:3rem;
+	font-size:3vmax;
+}*/
+.poster-container{
+  	display: flex;
+	justify-content: center;
+	align-items: center;
+  /*margin:3vmin;*/
+}
+.single-poster{margin: 0px 5px; }
+.poster-size{
+  padding:2px;
+  margin:0;
+	width: 200px;width:12.5rem;
+	height: 280px;height:17.3rem;height:;  
+}
+
+.poster-action{
+   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.poster-action+.poster-action{
+	position:relative; left:-24%;
+}
+
+.poster-frame{
+  background: #1e90ff;
+  /*background: url("http://placehold.it/200x280");*/
+	-webkit-clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%, 20% 100%, 100% 100%, 100% 0);
+clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%, 20% 100%, 100% 100%, 100% 0);
+  z-index:1;
+}
+/*make these into nth elements*/
+.pf1{ background: grey;background: url("../../img/overlay/frame02p1.png"); }
+.pf2{ background: grey;background: url("../../img/overlay/frame04p1.png"); }
+.pf3{ background: grey;background: url("../../img/overlay/frame03p1.png"); }
+.poster-content{
+	/*width: 120px;
+	height: 280px;*/  /*just changed*/
+	width:50%;
+	width:39%;
+	height:100%;  
+  top:-280px;
+  /*based on half w&h*/
+  /*left:60px;*/
+
+  position:relative;
+  /*text-align:justify;*/ /*just changed*/
+  text-align:center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  z-index:999;/* z-index:1; */
+
+  font-size:medium; /*arbitrary, untested*/
+  font-size:2.7rem;
+  /*font-size:2vmax;*/
+}
+
+
+/* MODIFIED ************************************************ */
+.well{} /*desc at bottom*/
+.well-lg{
+	width:66.5%;width:66.5rem;width:66.5vmax;
+	background:rgba(177,177,177,0.9);
+	font-size:medium !important; /*arbitrary, untested*/
+	font-size:3rem !important;
+	font-size:3vw !important;
+	/*line-height: 90%;*/
+	text-align: justify;
+	padding: auto 1vmax !important;
+	/*margin: auto 1vmax !important;*/
+	margin: 1vmax auto;
+}
+.well-content{ padding: 20px 50px; }
+.well.web{}
+.well.prog{}
+.well.img{}
+
+.section-lg{} /* used for web, programming, graphics*/
+/* should maybe use content?*/
+
+
+/* SCAFFOLDING: ELEMENTS */
+.flex{display:flex;}
+.base{
+	flex-direction: row;
+	align-items:baseline;
+}
+.flex-column{flex-direction: column;}
+.center-children{
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align:center;
+}
+
+.center-vertical{align-content:center;}
+.self-center{ align-self: center; text-align:center; }
+/*.flex-am{ flex:none; }*/
+
+#hero-main{
+	background-image:url("../../img/hero_v1p4.png") ;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:bottom;
+}
+.hero{
+	position:static;top:0;
+	flex-wrap: nowrap;
+	min-height:90%;height:90%;height:95vh;
+	min-width:100%;width:100%;max-width:100%;
+}
+
+.well,
+#to-top-button{
+	display:flex;
+	width:30rem;width:30vw;
+  		min-width:10%;
+	height:6.4rem;  height:6.4vw;
+		min-height: 6.4rem;
+	flex-direction: column;
+	font-weight:900;
+	font-size:6rem;font-size:6vw;
+	line-height: .2rem;line-height:.2vw;
+	position:relative;/*nec for first child opac-border*/
+	overflow:hidden;
+}
+.well span:last-of-type,
+#to-top-button span:last-of-type{
+	letter-spacing: -.9rem;
+	font-size:6rem;
+	align-self: center;
+}

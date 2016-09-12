@@ -1,0 +1,26 @@
+body .container {
+  height: 200px;
+  width: 80%;
+  background: #334;
+  padding: 50px;
+  overflow: hidden;
+  color: #FFF;
+}
+body .container .text-wrap {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+body .container .text-wrap svg {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  font: bold 100px sans-serif;
+  text-transform: uppercase;
+}
+body .container .text-wrap svg .img-layer {
+  fill: url(#p-img);
+}
+body .container .text-wrap svg .gradient-layer {
+  fill: url(#gr-overlay);
+}

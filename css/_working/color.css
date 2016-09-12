@@ -1,0 +1,30 @@
+/**********************************************************************************
+	color styles 3.0 
+**********************************************************************************/
+
+/*body{background-color:rgba(0,0,0,0.7);}*/
+/*body, #under-foot{background-color:#707070;}*/
+.quote-author-font{ color:grey;color:rgba(0,0,0,0.3);  }
+
+.border-leaf{
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgb(255,255,255) 0%, rgb(216,216,216) 86%, rgb(243,243,243) 86%, rgb(243,243,243) 87%, rgb(237,237,237) 88%, rgb(255,255,255) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgb(255,255,255) 0%,rgb(216,216,216) 86%,rgb(243,243,243) 86%,rgb(243,243,243) 87%,rgb(237,237,237) 88%,rgb(255,255,255) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgb(255,255,255) 0%,rgb(216,216,216) 86%,rgb(243,243,243) 86%,rgb(243,243,243) 87%,rgb(237,237,237) 88%,rgb(255,255,255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border-width:4px 30px 4px 30px;
+border-width:1vmin 0.1vmin 1vmin 0.1vmin;
+border-style: solid;
+border-color: #56c6d9 #56c6d9 #464545 #464545;
+border-color: 
+  rgba(0,0,0,0.7) 
+  rgba(0,0,0,0.8)
+  rgba(0,0,0,0.8) 
+  rgba(0,0,0,0.6);
+border-radius:0 120px 0 120px;
+-moz-border-radius:0 120px 0 120px;
+-webkit-border-radius:0 120px 0 120px;
+ }  

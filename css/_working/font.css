@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo+Black);
+@import 'https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff';
+
+
+
+
+.cursive-font{font-family: 'Herr Von Muellerhoff', cursive;}
+.mono-font{font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace}
+
+#hero-main-txt{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight:400 !important;
+	font-size:60pt;
+	font-size:6vw;
+	line-height:30pt;
+	/*font-size:5vw;*/
+	color:white;
+	opacity:0.8;
+}
+.heroic-txt{
+    font-family: 'Archivo Black', sans-serif;
+    font-weight:400 !important;
+	font-size:60pt;
+	font-size:6vw;
+	color:white;
+	opacity:0.6;
+}
+
+#final-quote-font{
+	font-size:100%;
+	font-size:2.1vmin;
+	font-weight:900;
+	color: black;
+}
+.quote-author-font{ display:inline-block; }
+
+
+
+
+
+
+
+/* OLD
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:600);
+*/
+/* Safari, Android, iOS *//*IS MODIFIED GEORGIA FONT*/
+/*
+@font-face {
+  font-family: 'titleFont';
+  src: url(../font/FFF_Tusj.ttf)  format('truetype'); 
+}
+*/
