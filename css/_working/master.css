@@ -1,9 +1,9 @@
 /* ******************************************************** */
 @import dev.css;
-* {margin:0;padding:0;}
+html,body,body>* {margin:0;padding:0;}
 .row{margin-left:0;margin-right:0;} /*bootstart override*/
 
-html{font-size:14;} /* THIS IS FOR USE WITH REM LENGTH SIZING*/
+/*html{font-size:14;}*/ /* THIS IS FOR USE WITH REM LENGTH SIZING*/
 
 /*should organize by common alterations - containers( wells, margined boxes, etc) */
 
@@ -24,17 +24,22 @@ main{
 .grey-hover:hover{
 	background-color:rgba(144,144,144, 0.7); 
 }
-.blur-active:active{
+.blur-active:active,
+.box .box-text a:active{
 	filter:blur(2px);
 	-webkit-filter:blur(2px);
 }
-.unblur-hover:hover{
+.unblur-hover:hover,
+.box:hover .opac-border-2{
 	filter:blur(0px);
 	-webkit-filter:blur(0px);
+  color: grey !important;
 }
-.blur-hover:hover{
+.blur-hover:hover,
+.box:hover span:last-child{
 	filter:blur(2px);
 	-webkit-filter:blur(2px);
+  color: black;
 }
 .transition-p5{
 -o-transition: 0.5s;  
@@ -57,6 +62,20 @@ main{
 	/*border-bottom:solid;*/
 	border-width:3px;
 }
+/*.margin-horizontal-1{ margin-left:1rem;margin-right:1rem; }
+.margin-horizontal-2{ margin-left:2rem;margin-right:2rem; }
+.margin-horizontal-scale-5{ 
+	margin-left:5%;margin-right:5%;
+	margin-left:5vh;margin-right:5vh; }
+.margin-horizontal-scale-20{ 
+	margin-left:20%;margin-right:20%;
+	margin-left:20vh;margin-right:20vh; }
+.margin-vertical-1{ margin-top: 3rem; margin:bottom: 3rem; }
+.opacity-50  /* testing */
+/*{	zoom: 1;filter: alpha(opacity=50);opacity: 0.5;  }
+.pad-p5{padding:.5rem;}
+.pad-vertical-1{ padding-top:1rem;padding-bottom:1rem; }
+.pad-horizontal-1{ padding-left:1rem;padding-right:1rem; }*/
 .margin-horizontal-1{ margin-left:1rem;margin-right:1rem; }
 .margin-horizontal-2{ margin-left:2rem;margin-right:2rem; }
 .margin-horizontal-scale-5{ 
@@ -71,6 +90,13 @@ main{
 .pad-p5{padding:.5rem;}
 .pad-vertical-1{ padding-top:1rem;padding-bottom:1rem; }
 .pad-horizontal-1{ padding-left:1rem;padding-right:1rem; }
+.pad-horizontal-2-2{ 
+	padding-left:2rem; padding-left:2vw;
+	padding-right:2rem; padding-right:2vw;}
+.pad-horizontal-4-4{ 
+	padding-left:4rem; padding-left:4vw;
+	padding-right:4rem; padding-right:4vw;}
+
 .txt-center{ text-align:center; }
 
 img{max-width: 100%;}
@@ -89,6 +115,27 @@ img{max-width: 100%;}
 	top:0;
 	left:0;
 	right:0;}
+.opac-border-2{
+	background:rgb(45,45,45); background:rgba(0,0,0,0.9);
+	filter:blur(5px);
+	-webkit-filter:blur(5px);
+	font-size:.1rem !importrant;/*just incase*/
+	line-height: .1rem !important;/*just incase*/
+	min-width:101%;/*for blur*/
+  max-width:101%;
+	min-height:10px;	height:.5rem;height:.4vmin;	max-height:50px;
+	position:absolute;
+/*   height:.4vmax; */
+	top:0;
+/*   top:0%; */
+	left:0;
+	right:0;
+  margin:0 !important;
+/*   bottom:0; */
+/*   padding-top:-20%; */
+/*   padding-bottom:99%; */
+  background-clip:content-box !important;
+}
 /* CREATED ***************************************************/
 /* ROW: anchros-lg *******************************************/
 /*.poster-container-1{
@@ -164,18 +211,65 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 
 /* MODIFIED ************************************************ */
 .well{} /*desc at bottom*/
-.well-lg{
+
+.welp{
+	display:flex;
+	width:30rem;
+	height:6.4rem;
+	min-height: 6.4rem;
+	flex-direction: column;
+	font-weight:900;
+	font-size:6rem;
+	line-height: .2rem;
+	position:relative;/*nec for first child opac-border*/
+	overflow:hidden;
+}
+.welp span:last-of-type,
+.welp-a span:last-of-type{
+	letter-spacing: -.9rem;
+	font-size:6rem;
+	align-self: center;
+	position:absolute;
+	bottom:2.4rem;
+}
+.welp-a{
+	display:flex;
+	width:30%;width:30rem;width:30vw;
+  min-width:10%;
+	height:6.4rem;
+  height:6.4vw;
+	min-height: 6.4rem;
+	flex-direction: column;
+	font-weight:900;
+	font-size:6rem;font-size:6vw;
+	line-height: .2rem;line-height:.2vw;
+	position:relative;/*nec for first child opac-border*/
+	overflow:hidden;
+}
+
+/*.well-lg{
 	width:66.5%;width:66.5rem;width:66.5vmax;
 	background:rgba(177,177,177,0.9);
-	font-size:medium !important; /*arbitrary, untested*/
+	font-size:medium !important; arbitrary, untested
 	font-size:3rem !important;
 	font-size:3vw !important;
-	/*line-height: 90%;*/
-	text-align: justify;
 	padding: auto 1vmax !important;
-	/*margin: auto 1vmax !important;*/
 	margin: 1vmax auto;
+}*/
+.well-lg,.well-lg div{
+  width:66.5rem;width:66.5vmax;
+  height:auto;
+  text-align:justify !important;
+	margin: 1vmax auto;/* centers the block */
 }
+
+.well-sm,.well-sm div{
+  width:33.4rem;width:33.4vmax;
+  height:auto;
+  text-align:justify;
+	margin: 1vmax auto;/* centers the block */
+}
+
 .well-content{ padding: 20px 50px; }
 .well.web{}
 .well.prog{}
@@ -184,6 +278,9 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 .section-lg{} /* used for web, programming, graphics*/
 /* should maybe use content?*/
 
+.box,.box>*{background-clip:padding-box !important;}
+.box:hover .opac-border-2{	/*defined in sheet*/ }
+.box-text{}
 
 /* SCAFFOLDING: ELEMENTS */
 .flex{display:flex;}
@@ -198,7 +295,6 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 	align-content: center;
 	text-align:center;
 }
-
 .center-vertical{align-content:center;}
 .self-center{ align-self: center; text-align:center; }
 /*.flex-am{ flex:none; }*/
@@ -214,6 +310,12 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 	flex-wrap: nowrap;
 	min-height:90%;height:90%;height:95vh;
 	min-width:100%;width:100%;max-width:100%;
+}
+
+.unit-3,.unit-3 .box-text{height: 15.3rem;/*9.9*/}
+.unit-3,.unit-3 div:first-child{
+font-size:3.0rem;font-size:3.8vmax !important;
+line-height:3.1rem; /*line-height:2.7vmax;*/
 }
 
 .well,

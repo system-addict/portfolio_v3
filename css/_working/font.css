@@ -2,7 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff';
 
 
-
+html{font:66.25%;font:66.25vw;}
 
 .cursive-font{font-family: 'Herr Von Muellerhoff', cursive;}
 .mono-font{font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace}
