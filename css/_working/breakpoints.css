@@ -44,10 +44,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-.poster-container, .clients{
-    flex-direction: column;
-}
-/*.poster-content{font-size:10v;}*/
+    .poster-container{
+        flex-direction: column;
+    }
+    .clients{padding:0;}
 }
 
 /* Extra Small Devices, Phones */ 

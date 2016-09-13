@@ -1,0 +1,87 @@
+/*html body {
+  background: #333;
+  height: 100%;
+}
+*/
+/*************************** use below**/
+.title-row { overflow: hidden;position:relative;height:30vmax; }
+
+/*html, body,*/
+.full {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.reverse-text-direction {
+  display: inline-block;
+  left: 30%;
+  width: 100%;
+  position: relative;
+  right: 10%;
+  -webkit-transform-origin: left bottom;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.bump-left-3pr { margin-right: -2%; }
+.bump-right-18pr {   margin-left: 17%; }
+
+html body .title-container {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  min-height: 5px;
+  height: 50%;
+  height: 22vmax;/*22vw*/
+  width: 100%;
+  width: 100vw;
+  background: #334;
+  padding: 10px;
+  overflow: hidden;
+  color: #FFF;
+  z-index: 99;
+}
+html body .title-container .text-wrap {
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+html body .title-container .text-wrap svg {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font: bold 100px sans-serif;
+  text-transform: uppercase;
+}
+html body .title-container .text-wrap svg .img-layer {
+  fill: url(#p-img);
+}
+html body .title-container .text-wrap svg .gradient-layer {
+  fill: url(#gr-overlay);
+}
+.sub-text-container{ position:static; }
+html body .title-subtext {
+  position: absolute;
+  right: 5%;
+  top: .05em;
+  font-weight: 900;
+  font-family: 'Herr Von Muellerhoff', cursive;
+  font-size: 20em;
+  font-size: 24vw;
+  letter-spacing: .045em;
+  color: #ffb537;
+  color: rgba(255, 181, 55, 0.4);
+  z-index: 2;
+}

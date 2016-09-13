@@ -1,5 +1,6 @@
 /* ******************************************************** */
 @import dev.css;
+html,body{}
 html,body,body>* {margin:0;padding:0;}
 .row{margin-left:0;margin-right:0;} /*bootstart override*/
 
@@ -152,31 +153,46 @@ img{max-width: 100%;}
 	font-size:3rem;
 	font-size:3vmax;
 }*/
-.poster-container{
+/*.poster-container{
   	display: flex;
 	justify-content: center;
 	align-items: center;
-  /*margin:3vmin;*/
-}
-.single-poster{margin: 0px 5px; }
+  /*margin:3vmin;* /
+}*/
+/*.single-poster{margin: 0px 5px; }
 .poster-size{
   padding:2px;
   margin:0;
 	width: 200px;width:12.5rem;
 	height: 280px;height:17.3rem;height:;  
+}*/
+.poster-container{align-items: center;justify-content: center;}
+.single-poster, .big-boy-poster{
+  margin: .6rem;
+  position:relative;/*nec. for absolute position of child elements.*/
 }
-
-.poster-action{
+.poster-size{
+  padding:2px;
+  margin:0;
+	width: 200px;
+	height: 280px;  
+}
+/*.poster-action{
    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 .poster-action+.poster-action{
 	position:relative; left:-24%;
-}
+}*/
 
-.poster-frame{
+/*.poster-frame{
   background: #1e90ff;
-  /*background: url("http://placehold.it/200x280");*/
+  -webkit-clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%, 20% 100%, 100% 100%, 100% 0);
+clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%, 20% 100%, 100% 100%, 100% 0);
+  z-index:1;
+}*/
+.poster-frame{
+  position: relative;
 	-webkit-clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%, 20% 100%, 100% 100%, 100% 0);
 clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%, 20% 100%, 100% 100%, 100% 0);
   z-index:1;
@@ -185,29 +201,55 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 .pf1{ background: grey;background: url("../../img/overlay/frame02p1.png"); }
 .pf2{ background: grey;background: url("../../img/overlay/frame04p1.png"); }
 .pf3{ background: grey;background: url("../../img/overlay/frame03p1.png"); }
-.poster-content{
-	/*width: 120px;
-	height: 280px;*/  /*just changed*/
+
+.poster-image-a { 
+  background:#1e90ff;
+  background:url("http://lorempixel.com/output/abstract-q-c-400-200-4.jpg");
+  background: url("../../img/overlay/frame02p1.png");
+}
+.poster-image-b {  
+  background:#1e90ff;
+  background:url("http://lorempixel.com/output/abstract-q-c-400-200-1.jpg");
+  background: url("../../img/overlay/frame04p1.png");
+}
+.poster-image-c {  
+  background:#1e90ff;
+  background:url("http://lorempixel.com/output/abstract-q-c-400-200-5.jpg");
+  background: url("../../img/overlay/frame03p1.png");
+}
+.poster-image-big-d {  
+  background:#1e90ff;
+  background:url("http://lorempixel.com/output/abstract-q-g-400-200-3.jpg");
+  background: url("../../img/overlay/frame01p1.png");
+}
+/*.poster-content{
 	width:50%;
 	width:39%;
 	height:100%;  
   top:-280px;
-  /*based on half w&h*/
-  /*left:60px;*/
-
   position:relative;
-  /*text-align:justify;*/ /*just changed*/
   text-align:center;
   display: flex;
   align-content: center;
   align-items: center;
-  z-index:999;/* z-index:1; */
-
-  font-size:medium; /*arbitrary, untested*/
+  z-index:999;/* z-index:1; * /
+  font-size:medium; /*arbitrary, untested* /
   font-size:2.7rem;
-  /*font-size:2vmax;*/
+}*/
+.poster-content{
+  position:absolute;
+  top:0;bottom:0;left:0;right:0;
+  padding: 3.5rem;
+/*   padding-left:2rem;
+  padding-right:2rem; */
+  text-align:center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  z-index:999;/* z-index:1; */
 }
-
+.poster-content span{height:inherit;width:inherit;}
 
 /* MODIFIED ************************************************ */
 .well{} /*desc at bottom*/
@@ -284,20 +326,18 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 
 /* SCAFFOLDING: ELEMENTS */
 .flex{display:flex;}
-.base{
-	flex-direction: row;
-	align-items:baseline;
-}
+.flex-base{align-items:baseline;}
 .flex-column{flex-direction: column;}
+.flex-wrap{flex-wrap:wrap;}
 .center-children{
+	/*change to flex-center-children*/
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 	text-align:center;
 }
-.center-vertical{align-content:center;}
-.self-center{ align-self: center; text-align:center; }
-/*.flex-am{ flex:none; }*/
+.center-vertical{align-content:center;} /*add flex prefix*/
+.self-center{ align-self: center; text-align:center; } /*change to flex-self-center*/
 
 #hero-main{
 	background-image:url("../../img/hero_v1p4.png") ;

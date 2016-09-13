@@ -42,8 +42,11 @@ row-short, row-tall row-hero*/
 	bottom:-15.5vmin;
 }
 .clients>*{padding:.5rem;}
-.clients>*:first-child{padding-top:2.2rem;}
-.clients>*:last-child {padding-bottom:2.2rem;}
+/*.clients>*:first-child,*/
+.clients{padding-top:2.2rem;}
+/*.clients>*:last-child,*/
+.clients{padding-bottom:2.2rem;}
+
 .clients>img{max-width:100%;}
 
 .clients + .row{ /*relative to above*/
