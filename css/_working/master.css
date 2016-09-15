@@ -3,64 +3,22 @@
 html,body{}
 html,body,body>* {margin:0;padding:0;}
 .row{margin-left:0;margin-right:0;} /*bootstart override*/
-
-/*html{font-size:14;}*/ /* THIS IS FOR USE WITH REM LENGTH SIZING*/
-
-/*should organize by common alterations - containers( wells, margined boxes, etc) */
-
-/* OVERRIDE *********************************************** */
-/* need for sizing %s*/
-/*body{ height:100%;maximum-height:100%; margin:0; border:0;}*/
 main{ 
 	height:100%;
 	maximum-height:100%; 
-	/*margin:0 -15px !important;*/ 
 	padding:0 !important;
 }
 
-.bg-lg-grey{
-	background-color:rgb(144,144,144); background-color:rgba(144,144,144,0.4);
-}
 
-.grey-hover:hover{
-	background-color:rgba(144,144,144, 0.7); 
-}
-.blur-active:active,
-.box .box-text a:active{
-	filter:blur(2px);
-	-webkit-filter:blur(2px);
-}
-.unblur-hover:hover,
-.box:hover .opac-border-2{
-	filter:blur(0px);
-	-webkit-filter:blur(0px);
-  color: grey !important;
-}
-.blur-hover:hover,
-.box:hover span:last-child{
-	filter:blur(2px);
-	-webkit-filter:blur(2px);
-  color: black;
-}
-.transition-p5{
--o-transition: 0.5s;  
-    -ms-transition: 0.5s;
-    -moz-tranistion: 0.5s;
-    -webkit-transition: 0.5s;
-	transition: 0.5s ease;
-}
+/*should organize by common alterations - containers( wells, margined boxes, etc) */
+/* OVERRIDE *********************************************** */
+/* need for sizing %s*/
+/*body{ height:100%;maximum-height:100%; margin:0; border:0;}*/
 
-.transition-1{
--o-transition: 1s;  
-    -ms-transition: 1s;
-    -moz-tranistion: 1s;
-    -webkit-transition: 1s;
-	transition: 1s ease;
-}
+.bg-lg-grey{background-color:rgb(144,144,144); background-color:rgba(144,144,144,0.4);}
 .border-small-top{
 	border-color:black;	/*border-color:rgb(44,44,44); */
 	border-top:solid;
-	/*border-bottom:solid;*/
 	border-width:3px;
 }
 /*.margin-horizontal-1{ margin-left:1rem;margin-right:1rem; }
@@ -86,8 +44,9 @@ main{
 	margin-left:20%;margin-right:20%;
 	margin-left:20vh;margin-right:20vh; }
 .margin-vertical-1{ margin-top: 3rem; margin:bottom: 3rem; }
-.opacity-50  /* testing */
-{	zoom: 1;filter: alpha(opacity=50);opacity: 0.5;  }
+
+.opacity-50{ zoom: 1;filter: alpha(opacity=50);opacity: 0.5;  }/* testing */
+
 .pad-p5{padding:.5rem;}
 .pad-vertical-1{ padding-top:1rem;padding-bottom:1rem; }
 .pad-horizontal-1{ padding-left:1rem;padding-right:1rem; }
@@ -98,7 +57,6 @@ main{
 	padding-left:4rem; padding-left:4vw;
 	padding-right:4rem; padding-right:4vw;}
 
-.txt-center{ text-align:center; }
 
 img{max-width: 100%;}
 
@@ -128,7 +86,6 @@ img{max-width: 100%;}
 	position:absolute;
 /*   height:.4vmax; */
 	top:0;
-/*   top:0%; */
 	left:0;
 	right:0;
   margin:0 !important;
@@ -312,6 +269,13 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 	margin: 1vmax auto;/* centers the block */
 }
 
+.well-xsm,.well-xsm div{
+  width:24.4rem;width:24.4vmax;
+  height:auto;
+  text-align:justify;
+	margin: 1vmax auto;/* centers the block */
+}
+
 .well-content{ padding: 20px 50px; }
 .well.web{}
 .well.prog{}
@@ -324,20 +288,6 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 .box:hover .opac-border-2{	/*defined in sheet*/ }
 .box-text{}
 
-/* SCAFFOLDING: ELEMENTS */
-.flex{display:flex;}
-.flex-base{align-items:baseline;}
-.flex-column{flex-direction: column;}
-.flex-wrap{flex-wrap:wrap;}
-.center-children{
-	/*change to flex-center-children*/
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	text-align:center;
-}
-.center-vertical{align-content:center;} /*add flex prefix*/
-.self-center{ align-self: center; text-align:center; } /*change to flex-self-center*/
 
 #hero-main{
 	background-image:url("../../img/hero_v1p4.png") ;

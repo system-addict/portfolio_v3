@@ -67,10 +67,10 @@ row-short, row-tall row-hero*/
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#373a3c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-/* FOOTER + **********************************************************************/
+/* FOOTER ************************************************************************/
 footer{
-	height:20rem;/* untested */
-	min-height: 61.8vmin; height:61.8vmin; 
+	height:20rem;/* untested */height:61.8vmin; 
+	min-height: 61.8vmin; 
 
 	background:url("../../img/footer/footer-1_main.png");
 	background-position: center;
@@ -87,41 +87,49 @@ footer{
  }
 
 footer{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
 	border-top:double;
 	border-bottom:double;
-border-width: 33px;
-/*box-sizing:all;*/
+	border-width: 33px;
+	/*box-sizing:all;*/
+
 }
+
+footer{
+	background:url("../../img/footer/footer-0_intro.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+ 	background:rgba(255,255,255,0.3);}
+footer:hover,footer:focus{
+  	/*animation: fadeOut 5s forwards;*/
+  	/*animation: fadeOut 5s;*/
+ 	background:rgba(255,255,255,0.5);
+ 	background-attachment: inherit;
+}
+footer:hover footer::after, footer:focus footer::after {
+  animation: fadeOut 5s forwards;
+}
+/*footer::before{
+ 	content:'';
+ 	background:url("../../img/footer/footer-0_intro.png");
+ }*/
 
 footer::after{
  	content:'';
  	background:url("../../img/footer/footer-1_main.png");
  }
-footer:hover::after, footer:focus::after {
-  animation: fadeOut 5s forwards;
-}
-footer>div{}
- footer::before{
- 	content:'';
- 	background:url("../../img/footer/footer-0_intro.png");
- }
+/* BACKGROUND **********************************************************************/
 
 #background, #background img{
 	position:fixed;
 	top: 0;left: 0;bottom: 0;right: 0;
-
 	height:135%;width:100%;
 	background-color:rgb(44,44,44);
-
-/*	filter:blur(15px) grayscale(35%);
+	/*filter:blur(15px) grayscale(35%);
 	-webkit-filter:blur(1px) grayscale(35%);*/
-	
 	z-index: -1;   
 }
+/* UNDER-FOOT **********************************************************************/
 
 .under-foot{/*also handled in "main, #underfoot" */
 	min-height: 61.8vmin; height:61.8vmin; 
@@ -153,7 +161,6 @@ footer>div{}
 	background-position: top;*/
 }
 
-
-/* SCAFFOLDING: COLS */
+/* SCAFFOLDING: COLS **********************************************************************/
 .col1{}
 .col2{}

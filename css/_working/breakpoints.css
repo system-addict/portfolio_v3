@@ -34,12 +34,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+font-size:1rem; font-size:1.8vmax;
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+font-size:1.3rem; font-size:1.8vmax;
 }
 
 /* Small Devices, Tablets */

@@ -1,0 +1,45 @@
+/**********************************************************************************
+	transitions
+**********************************************************************************/
+
+.grey-hover:hover{
+	background-color:rgba(144,144,144, 0.7); 
+}
+.blur-active:active,
+.box .box-text a:active{
+	filter:blur(2px);
+	-webkit-filter:blur(2px);
+}
+.unblur-hover:hover,
+.box:hover .opac-border-2{
+	filter:blur(0px);
+	-webkit-filter:blur(0px);
+  color: grey !important;
+}
+.blur-hover:hover,
+.box:hover span:last-child{
+	filter:blur(2px);
+	-webkit-filter:blur(2px);
+  color: black;
+}
+.transition-p5{
+-o-transition: 0.5s;  
+    -ms-transition: 0.5s;
+    -moz-tranistion: 0.5s;
+    -webkit-transition: 0.5s;
+	transition: 0.5s ease;
+}
+.transition-1{
+-o-transition: 1s;  
+    -ms-transition: 1s;
+    -moz-tranistion: 1s;
+    -webkit-transition: 1s;
+	transition: 1s ease;
+}
+.transition-3sec{
+-o-transition: 3.0s;  
+    -ms-transition: 3.0s;
+    -moz-tranistion: 3.0s;
+    -webkit-transition: 3.0s;
+	transition: 3.0s ease;
+}

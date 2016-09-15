@@ -1,0 +1,25 @@
+
+/* SCAFFOLDING: ELEMENTS */
+.flex{display:flex;}
+.flex-align-items-start{align-items: flex-start !important;}
+.flex-base{align-items:baseline;}
+.flex-column{flex-direction: column;}
+.flex-jc-space-around{justify-content:space-around !important;}
+.flex-wrap{flex-wrap:wrap;}
+.center-children{
+	/*change to flex-center-children*/
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align:center;
+}
+.center-children-all, .center-children-all *{
+	/*change to flex-center-children*/
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	text-align:center;
+}
+.center-vertical{align-content:center;} /*add flex prefix*/
+.self-center{ align-self: center; text-align:center; } /*change to flex-self-center*/
+

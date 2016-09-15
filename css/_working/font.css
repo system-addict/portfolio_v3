@@ -1,12 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Archivo+Black);
 @import 'https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff';
-
-
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300';
+/* ********************************************************************************/
 html{font:66.25%;font:66.25vw;}
 
+html,
+.minimal-font{font-family: 'Open Sans',"Lucida Bright",Georgia,serif;}
+.black-font{font-family: 'Archivo Black', sans-serif;}
 .cursive-font{font-family: 'Herr Von Muellerhoff', cursive;}
 .cursive-font-all,.cursive-font-all *{font-family: 'Herr Von Muellerhoff', cursive;}
+.mono-font{font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace}
+/**********************************************************************************
+	GENERICS
+**********************************************************************************/
 
+.font-size-1p8{ font-size:1.8rem; }
+.font-size-11{ font-size:1.4rem; }
+.medium-font{ font-weight:400; font-size:1.8rem; font-size:1.8vmax; }
+
+/*.txt-center{ text-align:center; }*/
+.txt-center{text-align: center !important;}
+.txt-justify{text-align: justify !important;}
+
+/**********************************************************************************
+	SPECIFICS
+**********************************************************************************/
 #anchor-font{	
 	font-weight:900;
 	font-size:2rem;
@@ -14,14 +32,6 @@ html{font:66.25%;font:66.25vw;}
    -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
 }
-.font-size-1p8{ font-size:1.8rem; }
-
-.medium-font{	
-	font-weight:900;
-	font-size:3rem;
-}
-.mono-font{font-family: "Lucida Sans Typewriter","Lucida Console",monaco,"Bitstream Vera Sans Mono",monospace}
-.black-font{font-family: 'Archivo Black', sans-serif;}
 
 #hero-main-txt{
     font-family: 'Archivo Black', sans-serif;
@@ -41,6 +51,7 @@ html{font:66.25%;font:66.25vw;}
 	color:white;
 	opacity:0.6;
 }
+footer a{}
 
 #final-quote-font{
 	font-size:100%;

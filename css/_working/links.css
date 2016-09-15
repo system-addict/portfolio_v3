@@ -1,0 +1,35 @@
+
+/**********************************************************************************
+	LINKS GENERIC
+**********************************************************************************/
+/*a[href]{color:pink; !important} all link refs*/
+a:link,a:link *{ color:rgb(22,22,22); }
+a:hover, a:hover *{ color:rgb(122,122,122); }
+a:hover{ color:rgb(222,222,222); }
+a:active,a:focus{color:inherit;}
+
+
+.ghost { text-decoration: none !important; }
+
+/**********************************************************************************
+	ANCHORS
+**********************************************************************************/
+#anchor-top{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.anchor, .anchor *{
+	max-height:0 !important;
+	max-width:0 !important;
+	visibility:hidden;
+	text-decoration: none !important;
+	line-height: 0;
+	color:inherit !important;
+	text-decoration: none !important;
+}
+.anchors-md{}
+/**********************************************************************************
+	FOOTER LINKS
+**********************************************************************************/
+footer a{}

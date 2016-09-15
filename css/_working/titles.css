@@ -4,6 +4,12 @@
 }
 */
 /*************************** use below**/
+#sub-text-2, #sub-text-2 *{ 
+      font-size:2em;
+      font-size:8.3vw;
+}
+#sub-text-2 .title-subtext{top:2em !important;}
+
 .title-row { overflow: hidden;position:relative;height:30vmax; }
 
 /*html, body,*/
@@ -27,6 +33,7 @@
 
 .bump-left-3pr { margin-right: -2%; }
 .bump-right-18pr {   margin-left: 17%; }
+.bump-margin-left-m2pr{margin-left:-2%;}
 
 html body .title-container {
   margin: 0;
@@ -65,11 +72,14 @@ html body .title-container .text-wrap svg {
   font: bold 100px sans-serif;
   text-transform: uppercase;
 }
-html body .title-container .text-wrap svg .img-layer {
-  fill: url(#p-img);
+html body #webdev .title-container .text-wrap svg .img-layer {
+  fill: url(#webdev-img); 
+}
+html body #compsci .title-container .text-wrap svg .img-layer {
+  fill: url(#compsci-img);
 }
 html body .title-container .text-wrap svg .gradient-layer {
-  fill: url(#gr-overlay);
+  fill: url(#gr-overlay);/*applies to all svgs*/
 }
 .sub-text-container{ position:static; }
 html body .title-subtext {
