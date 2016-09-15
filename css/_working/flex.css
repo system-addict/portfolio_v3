@@ -2,6 +2,10 @@
 /* SCAFFOLDING: ELEMENTS */
 .flex{display:flex;}
 .flex-align-items-start{align-items: flex-start !important;}
+.flex-around {  
+  display: flex;
+  justify-content: space-around;
+}
 .flex-base{align-items:baseline;}
 .flex-column{flex-direction: column;}
 .flex-jc-space-around{justify-content:space-around !important;}

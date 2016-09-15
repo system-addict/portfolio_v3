@@ -44,9 +44,6 @@ main{
 	margin-left:20%;margin-right:20%;
 	margin-left:20vh;margin-right:20vh; }
 .margin-vertical-1{ margin-top: 3rem; margin:bottom: 3rem; }
-
-.opacity-50{ zoom: 1;filter: alpha(opacity=50);opacity: 0.5;  }/* testing */
-
 .pad-p5{padding:.5rem;}
 .pad-vertical-1{ padding-top:1rem;padding-bottom:1rem; }
 .pad-horizontal-1{ padding-left:1rem;padding-right:1rem; }
