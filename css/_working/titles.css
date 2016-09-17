@@ -76,8 +76,8 @@ html body .title-container .text-wrap svg {
 }
 html body #webdev .title-container .text-wrap svg .img-layer { fill: url(#webdev-img); }
 html body #compsci .title-container .text-wrap svg .img-layer { fill: url(#compsci-img); }
-html body #gfx-dsgn .title-container .text-wrap svg .img-layer { fill: url(#gfx-dsgn); }
-html body #photog .title-container .text-wrap svg .img-layer { fill: url(#photog); }
+html body #gfx-dsgn .title-container .text-wrap svg .img-layer { fill: url(#gfx-dsgn-img); }
+html body #photog .title-container .text-wrap svg .img-layer { fill: url(#photog-img); }
 html body #photog .title-container .text-wrap svg { font: bold 120px sans-serif; }
 html body .title-container .text-wrap svg .gradient-layer {
   fill: url(#gr-overlay);/*applies to all svgs*/
