@@ -7,6 +7,7 @@
 
   <title>park develops: portfolio of michael park</title>  
 <!--   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/twentytwenty.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/_working/master.css">
   <link rel="stylesheet" type="text/css" href="css/_working/flex.css">
   <link rel="stylesheet" type="text/css" href="css/_working/links.css">
@@ -19,7 +20,9 @@
   <link rel="stylesheet" type="text/css" href="css/animate/animate.css">
    <link rel="stylesheet" type="text/css" href="css/_working/animate-using.css">
 
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="js/jquery.event.move.js"></script>
+<script src="js/jquery.twentytwenty.js"></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -29,207 +32,152 @@
 <body>
 
 <main class="container-fluid">
-
+  <!-- *********************************************************************************
+      HERO  
+  ********************************************************************************** -->
   <div id="hero-main" class="row row1 hero "><!-- hero 1 panel -->
     <div class="col-xs-12 txt flex flex-column center-children hero dv" id="hero-main">
       <p id="hero-main-txt">Can an image create a hero?</p>
     </div>
   </div>
 
+  <!-- *********************************************************************************
+      ANCHORS  
+  ********************************************************************************** -->
+  <div id="anchor-font" class="flex poster-container row black-font">
+    <div class="single-poster opacity-66-hover"><a href="#webdev" class="ghost"><!-- pane 1 -->
+      <div class="transition-p5 poster-frame poster-image-a poster-size"></div>
+      <div class="poster-content">
+        <span>WEB DEV</span>
+      </div></a>  
+    </div>
+    
+    <div class="single-poster opacity-66-hover"><a href="#compsci" class="ghost"><!-- pane 2 -->
+      <div class="transition-p5 poster-frame poster-image-b poster-size"></div>
+      <div class="poster-content">
+        <span>COMP SCI</span>
+      </div></a>  
+    </div>
+    
+    <div class="single-poster opacity-66-hover"><a href="#gfx-dsgn" class="ghost"><!-- pane 3 -->
+      <div class="transition-p5 poster-frame poster-image-c poster-size"></div>
+      <div class="poster-content">
+        <span>GFX DESG</span>
+      </div></a>  
+    </div>
 
-<div id="anchor-font" class="flex poster-container row black-font">
-  <div class="single-poster opacity-66-hover"><a href="#webdev" class="ghost"><!-- pane 1 -->
-    <div class="transition-p5 poster-frame poster-image-a poster-size"></div>
-    <div class="poster-content">
-      <span>WEB DEV</span>
-    </div></a>  
-  </div>
-  
-  <div class="single-poster opacity-66-hover"><a href="#compsci" class="ghost"><!-- pane 2 -->
-    <div class="transition-p5 poster-frame poster-image-b poster-size"></div>
-    <div class="poster-content">
-      <span>COMP SCI</span>
-    </div></a>  
-  </div>
-  
-  <div class="single-poster opacity-66-hover"><a href="#grx-dsgn" class="ghost"><!-- pane 3 -->
-    <div class="transition-p5 poster-frame poster-image-c poster-size"></div>
-    <div class="poster-content">
-      <span>GFX DESG</span>
-    </div></a>  
+    <div class="single-poster opacity-66-hover font-size-1p8"><a href="#photog" class="ghost"><!-- pane 4 -->
+      <div class="transition-p5 poster-frame poster-image-big-d poster-size"></div>
+      <div class="poster-content">
+        <span>PHOTOG</span>
+      </div></a>  
+    </div>
   </div>
 
-  <div class="single-poster opacity-66-hover font-size-1p8"><a href="#photog" class="ghost"><!-- pane 4 -->
-    <div class="transition-p5 poster-frame poster-image-big-d poster-size"></div>
-    <div class="poster-content">
-      <span>PHOTOG</span>
-    </div></a>  
-  </div>
-</div>
+  <div class="box flex flex-column center-children unit-3 well-lg"><!-- unit 4 -->
+    <div class="welp-a flex txt-center cursive-font bg-lg-grey margin-vertical-1 center-children grey-hover blur-active transition-1 pad-horizontal-1">
+      <div class="opac-border-2 transition-p5 z-top"> </div>
+      <p class="box-text pad-horizontal-4-4">Or does it simply point us back to our own imagination?  Do we create the hero as someone to save us or to identify the part of ourselves we need to call on when the time comes?</p>
+      <span class=" transition-1 text-grey">__ ___ _ </span>
+    </div>
+  </div><!-- end row -->
 
-<!--   <div class="big-boy-poster font-size-1p8"><!- - pane 3 - ->
-    <div class="poster-frame poster-image-big-d poster-size"></div>
-    <div class="poster-content">
-      <span>PHOTOG</span>
-    </div>  
-  </div>
-</div> -->
 
-<!--   <div class="row anchors-lg"><!- - hero: 3/txt - ->
-      <div class="row col-xs-12 col-md-6 poster-container">
-        <div class="single-poster col-xs-12"><!- - pane 1 - ->
-          <div class="poster-frame poster-size pf1"></div>
-          <div class="poster-content">
-            <span>Web Dev</span>
-          </div>  
-        </div>
-        <div class="single-poster col-xs-12"><!- - pane 2 - ->
-          <div class="poster-frame poster-size pf2"></div>
-          <div class="poster-content">
-            <span>Comp Sci</span>
-          </div>  
-        </div>
-        <div class="single-poster col-xs-12"><!- - pane 3 - ->
-          <div class="poster-frame poster-size pf3"></div>
-          <div class="poster-content">
-            <span>Graphics</span>
-          </div>  
-        </div>
-      </div> -->
-<!-- ORIGINAL
-<div class="col-xs-12 col-md-8 col1"><div class="row"><!- 3 panels ->
-      <div class="col-xs-4 poster-container flex flex-column center-children">
-          <div class="col-xs-12 self-center">
-            <p class="poster-content self-center">Web Dev</p>
-          </div> 
+  <!-- *********************************************************************************
+      WEBDEV  
+  ********************************************************************************** -->
+  <div id="webdev" class="title-row"><div class="title-container">
+    <div class="text-wrap">
+          <svg width="100%" viewBox="0 0 500 100">
+        <pattern 
+                 id="webdev-img" 
+                 viewBox="52 -2 300 50"
+                 preserveAspectRatio="xMaxYMax slice"
+                 patternUnits="userSpaceOnUse"
+                 width="150%" height="100%"
+                 >
+          <image xlink:href="img/headers/matrix-turning-point.gif" preserveAspectRatio="xMaxYMax " width="50%" height="50%"/>
+        </pattern>
+        <text text-anchor="middle"
+              x="50%"
+              y="50%"
+              dy=".35em"
+              class="img-layer">
+          WEBDEV
+        </text>
+        <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
+          <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
+          <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
+          <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
+        </linearGradient>
+        <text text-anchor="middle"
+              x="50%"
+              y="50%"
+              dy=".35em"
+              class="gradient-layer">
+          WEBDEV
+        </text>
+      </svg>
+    </div>
+  </div>
+    <div class="sub-text-container">
+      <div class="title-subtext reverse-text-direction bump-right-18pr">"</div>
+      <div class="title-subtext">Get In.</div>
+      <div class="title-subtext bump-left-3pr">"</div>
+    </div>
+  </div><!--end title row-->
+
+
+  <div id="web-dev-codepen" class="codepen-container flex-column">
+      <div><iframe class="iframe-50v50v_safe border-0" src="http://codepen.io/tv/XgkBpQ"></iframe></div>
+      <div class="font-codepen pad-left-10px pad-bottom-4px pad-top-2px">See More <a href="http://codepen.io/systemaddict/" target="_blank">Codepens</a></div>
+  </div>
+
+  <div id="clients" class="row clients border-leaf flex center-vertical center-children"><!-- clients -->
+      <div class="col-xs-12 col-md-6 flex flex-column center-children"><!--GROOVE NATION-->
+          <img class="pad-p5" src="img/clients/client-logo-GN_name_trans.png" />
       </div>
-      <div class="col-xs-4 poster-container flex flex-column center-children">
-          <div class="col-xs-12 self-center">
-            <p class="poster-content self-center">Comp Sci</p>
-          </div> 
+      <div class="col-xs-12 col-md-6 flex flex-column center-children"><!--KENNEDY VIOLINS-->
+          <img class="pad-p5" src="img/clients/client-logo-KV_name_trans.png" />
       </div>
-      <div class="col-xs-4 poster-container flex flex-column center-children">
-          <div class="col-xs-12 self-center">
-            <p class="poster-content self-center">Graphics</p>
-          </div> 
-      </div>
-    </div></div>-->
-    <!-- <div class="col-xs-12 col-md-6 col2"><!- - txt - ->
-      <div class="well well-lg"><div class="well-content">
-      Or does it simply point us back to our own imagination? 
-      Do we create the hero as someone to save us or to identify the part of ourselves we need to call on when the time comes?
-      &infin;
-      </div></div>
-    </div> -->
-  <!-- </div> -->
-  <!-- end row -->
-  
-<div class="box flex flex-column center-children unit-3 well-lg"><!-- unit 4 -->
-  <div class="welp-a flex txt-center cursive-font bg-lg-grey margin-vertical-1 center-children grey-hover blur-active transition-1 pad-horizontal-1">
-    <div class="opac-border-2 transition-p5 z-top"> </div>
-    <p class="box-text pad-horizontal-4-4">Or does it simply point us back to our own imagination?  Do we create the hero as someone to save us or to identify the part of ourselves we need to call on when the time comes?</p>
-    <span class=" transition-1 text-grey">__ ___ _ </span>
   </div>
-</div><!-- end row -->
+  <div class="row row-med">fillerbefilled
+          <div class="prog">
+          Lorem ipsum dolor 
+          </div>
+  </div>
 
-
-<div id="webdev" class="title-row"><div class="title-container">
-  <div class="text-wrap">
-        <svg width="100%" viewBox="0 0 500 100">
-      <pattern 
-               id="webdev-img" 
-               viewBox="52 -2 300 50"
-               preserveAspectRatio="xMaxYMax slice"
-               patternUnits="userSpaceOnUse"
-               width="150%" height="100%"
-               >
-        <image xlink:href="img/headers/matrix-turning-point.gif" preserveAspectRatio="xMaxYMax " width="50%" height="50%"/>
-      </pattern>
-      <text text-anchor="middle"
-            x="50%"
-            y="50%"
-            dy=".35em"
-            class="img-layer">
-        WEBDEV
-      </text>
-      <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
-        <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
-        <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
-        <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
-      </linearGradient>
-      <text text-anchor="middle"
-            x="50%"
-            y="50%"
-            dy=".35em"
-            class="gradient-layer">
-        WEBDEV
-      </text>
-    </svg>
+  <!-- *********************************************************************************
+      COMPSCI  
+  ********************************************************************************** -->
+  <div id="compsci" class="title-row"><div class="title-container">
+    <div class="text-wrap">
+          <svg width="100%" viewBox="0 0 500 100">
+        <pattern 
+                 id="compsci-img" 
+                 viewBox="60 -4 310 28"
+                 preserveAspectRatio="xMaxYMax slice"
+                 patternUnits="userSpaceOnUse"
+                 width="109%" height="90%"
+                 >
+          <image  xlink:href="http://66.media.tumblr.com/tumblr_lw1czb7J3F1qghl49o1_r3_500.gif" preserveAspectRatio="xMaxYMax " width="60%" height="60%"/>
+        </pattern>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="img-layer"> COMPSCI </text>
+  <!--       <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
+          <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
+          <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
+          <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
+        </linearGradient> -->
+      <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="gradient-layer"> COMPSCI </text>
+      </svg>
+    </div>
   </div>
-</div>
-  <div class="sub-text-container">
-  <div class="title-subtext reverse-text-direction bump-right-18pr">"</div>
-  <div class="title-subtext">Get In.</div>
-    <div class="title-subtext bump-left-3pr">"</div>
-  </div>
-</div><!--end title row-->
-
-
-<div id="clients" class="row clients border-leaf flex center-vertical center-children"><!-- clients -->
-  <div class="col-xs-12 col-md-6 flex flex-column center-children"><!--GROOVE NATION-->
-      <img class="pad-p5" src="img/clients/client-logo-GN_name_trans.png" />
-  </div>
-  <div class="col-xs-12 col-md-6 flex flex-column center-children"><!--KENNEDY VIOLINS-->
-      <img class="pad-p5" src="img/clients/client-logo-KV_name_trans.png" />
-  </div>
-  </div>
-<div class="row row-med">fillerbefilled
-        <div class="prog">
-        Lorem ipsum dolor 
-        </div>
-</div>
-
-
-<div id="compsci" class="title-row"><div class="title-container">
-  <div class="text-wrap">
-        <svg width="100%" viewBox="0 0 500 100">
-      <pattern 
-               id="compsci-img" 
-               viewBox="60 -4 310 28"
-               preserveAspectRatio="xMaxYMax slice"
-               patternUnits="userSpaceOnUse"
-               width="109%" height="90%"
-               >
-        <image  xlink:href="http://66.media.tumblr.com/tumblr_lw1czb7J3F1qghl49o1_r3_500.gif" preserveAspectRatio="xMaxYMax " width="60%" height="60%"/>
-      </pattern>
-      <text text-anchor="middle"
-            x="50%"
-            y="50%"
-            dy=".35em"
-            class="img-layer">
-        COMPSCI
-      </text>
-      <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
-        <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
-        <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
-        <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
-      </linearGradient>
-      <text text-anchor="middle"
-            x="50%"
-            y="50%"
-            dy=".35em"
-            class="gradient-layer">
-        COMPSCI
-      </text>
-    </svg>
-  </div>
-</div>
   <div id="sub-text-2" class="sub-text-container">
-  <div class="title-subtext reverse-text-direction bump-margin-left-m2pr">"</div>
-  <div class="title-subtext">Restate My Assumptions.</div>
+    <div class="title-subtext reverse-text-direction bump-margin-left-m2pr">"</div>
+    <div class="title-subtext">Restate My Assumptions.</div>
     <div class="title-subtext bump-left-3pr">"</div>
-  </div>
-</div><!--end title row-->
+    </div>
+  </div><!--end title row-->
 
   <div class="row hero "><!-- merge with web section, change class to heroic panel -->
     <div class="col-xs-12 txt flex flex-column center-children hero dv">
@@ -248,26 +196,121 @@
   </div>
 
   <div class="row section-lg"><!-- lg seciton: programming -->
-  <div class="row hero">
-    
-  </div>
+    <div class="row hero">
+    </div>
     <div class="col-xs-12 col-md-8 col1"><div class="row"><!-- 3 panels -->
       <div class="col-xs-4"></div>
       <div class="col-xs-4"></div>
       <div class="col-xs-4"></div>
     </div></div>
-    <div class="col-xs-6 col-md-4 col2"><!-- txt -->
+    <!--<div class="col-xs-6 col-md-4 col2"><!- - txt - ->
         <div class="well prog">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non oident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-    </div>
-  </div>
+    </div> -->
+  </div>  
 
   <div class="col-xs-12 col-sm-6 col1"></div>
+
+  <!-- *********************************************************************************
+      COMPSCI  
+  ********************************************************************************** -->
+  <div id="gfx-dsgn" class="title-row">
+  <div class="title-container">
+    <div class="text-wrap">
+      <svg width="100%" viewBox="10 0 550 100">
+        <pattern 
+                 id="gfx-dsgn" 
+                 viewBox="175 4 300 36"
+                 preserveAspectRatio="xMaxYMax slice"
+                 patternUnits="userSpaceOnUse"
+                 width="190%" height="90%"
+                 >
+          <image  xlink:href="http://i.imgur.com/QZhajmU.gif" preserveAspectRatio="xMaxYMax " width="60%" height="60%"/>
+        </pattern>
+        <text text-anchor="middle"
+              x="50%"
+              y="50%"
+              dy=".35em"
+              class="img-layer"><tspan text-anchor="middle">GFX</tspan><tspan class="symbol-text-1" text-anchor="middle">/</tspan><tspan text-anchor="middle">DSGN</tspan></text>
+        <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
+          <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
+          <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
+          <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
+        </linearGradient>
+        <text text-anchor="middle"
+              x="50%"
+              y="50%"
+              dy=".35em"
+              class="gradient-layer">
+          GFX<tspan class="symbol-text-1">/</tspan>DSGN
+        </text>
+      </svg>
+    </div>
+  </div>
+  <div id="sub-text-3" class="sub-text-container">
+    <div class="title-subtext reverse-text-direction bump-margin-left-m2pr">"</div>
+    <div class="title-subtext">His Ways Were The Old Ways...</div>
+      <div class="title-subtext bump-left-3pr">"</div>
+    </div>
+  </div><!--end title row-->
+
+
+  <div class="2020container"><div id="protractor-display" class="twentytwenty-container max-height-vmin90">
+     <img src="img/gfx-dsgn/SxS_protector_800x1120.png" class=""/>
+     <img src="img/gfx-dsgn/SxS_protractor4p2_800x1120.png" class=""/>
+  </div></div>
+  <script>
+    $(window).load(function(){
+      $("#protractor-display").twentytwenty({default_offset_pct: 0.27});
+    });
+  </script>
+
+  <!-- *********************************************************************************
+      PHOTOG
+  ********************************************************************************** -->
+  <div id="photog" class="title-row">
+  <div class="title-container">
+    <div class="text-wrap">
+      <svg width="100%" viewBox="10 0 550 100">
+        <pattern 
+                 id="photog" 
+                 viewBox="63 11 320 36"
+                 preserveAspectRatio="xMaxYMax slice"
+                 patternUnits="userSpaceOnUse"
+                 width="104%" height="93%"
+                 >
+          <image  xlink:href="http://i.imgur.com/qxjkFiJ.gif" preserveAspectRatio="xMaxYMax" width="60%" height="60%"/>
+        </pattern>
+        <text text-anchor="middle"
+              x="50%"
+              y="50%"
+              dy=".35em"
+              class="img-layer">PHOTOG</text>
+        <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
+          <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
+          <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
+          <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
+        </linearGradient>
+        <text text-anchor="middle"
+              x="50%"
+              y="50%"
+              dy=".35em"
+              class="gradient-layer">PHOTOG
+        </text>
+      </svg>
+    </div>
+  </div>
+  <div id="sub-text-4" class="sub-text-container">
+    <div class="title-subtext reverse-text-direction bump-margin-left-m27pr">"</div>
+    <div class="title-subtext">You are what you Love - Not what loves you.</div>
+    <div class="title-subtext bump-left-3pr">"</div>
+    </div>
+  </div><!--end title row-->
 </main>
-
-
-
+<!-- *********************************************************************************
+    FOOTER
+********************************************************************************** -->
 <footer id="footer" class="transition-3sec medium-font flex center-children">
 <div class="flex center-children flex-align-items-start flex-jc-space-around">
 
@@ -305,68 +348,33 @@
      <div><a href="mailto:park.develops@gmail.com">email</a></div>
      <div><a href=""></a></div>
   </div><!-- end col -->
-
-
-<!--    <div class="flex flex-column txt-center col-xs-12 col-sm-6 col-md-4"><!- - FOOTER col 1 - ->
-     <h3>work</h3>
-     <div><a href="https://www.behance.net/systemaddict" target="_blank">behance</a></div>
-     <div><a href="https://github.com/system-addict" target="_blank">github</a></div>
-        <span>in development</span>
-     <div><a href="https://pixabay.com/en/users/parkdevelops-2774832/" target="_blank">pixabay</a></div>
-   </div><!- - END COL - ->
- -->
-<!--    <div class="flex flex-column txt-center col-xs-12 col-sm-6 col-md-4"><!- - FOOTER col 2 - ->
-     <h3>social</h3>
-     <div><a href="https://www.instagram.com/system.addict/" target="_blank">instagram</a></div><span>dev story log</span>
-     <div><a href="http://stackoverflow.com/users/3617064/systemaddict" target="_blank">stack overflow</a></div>
-     <div><a href="https://www.tumblr.com/blog/mendment" target="_blank">mendment</a></div>
-        <span>dev resource blog</span>
-   </div><!- - END COL - ->
- -->
-<!--    <div class="flex flex-column txt-center col-xs-12 col-sm-6 col-md-4"><!- - FOOTER col 3 - ->
-     <h3>contact</h3>
-     <div><a href="tel:360-524-2388">telephone</a></div>
-     <div><a href="mailto:park.develops@gmail.com">email</a></div>
-     <div><a href=""></a></div>
-   </div><!- - END COL - -> -->
-
-
-</div></footer>
+</div>
+</footer>
 
 <div class="under-foot">
-<div id="final-quote-font" class="mono-font txt-center bg-lg-grey pad-vertical-1 border-small-top margin-horizontal-1 pad-horizontal-1">
-We shall not cease from exploration, 
-and the end of all our exploring 
-will be to arrive where we started 
-and know the place for the first time. 
+  <div id="final-quote-font" class="mono-font txt-center bg-lg-grey pad-vertical-1 border-small-top margin-horizontal-1 pad-horizontal-1">
+    We shall not cease from exploration, 
+    and the end of all our exploring 
+    will be to arrive where we started 
+    and know the place for the first time. 
 
-<span class="quote-author-font">&infin; T. S. Eliot</span>
-</div>
-
-<!-- <div class="flex flex-column center-children ">
-<a class="ghost" href="#anchor-top">
-  <div id="to-top-button" class="txt-center cursive-font bg-lg-grey margin-vertical-1 center-children grey-hover blur-active transition-1 pad-horizontal-1 border-small-top">
-    <div class="opac-border unblur-hover transition-p5"> </div>
-    <span class="blur-hover traisition-p5">back to top</span>
-    <span class="blur-hover transition-1">__ ___ _ </span>
-  </div></a>
-</div> -->
-<div class="box flex flex-column center-children well-sm"><a class="ghost" href="#anchor-top">
-  <div class="welp-a txt-center cursive-font bg-lg-grey margin-vertical-1 center-children grey-hover blur-active transition-1 pad-horizontal-1">
-    <div class="opac-border-2 unblur-hover transition-p5 z-top"> </div>
-    <span class="box-text">back to top</span>
-    <span class="blur-hover transition-1">__ ___ _ </span>
+    <span class="quote-author-font">&infin; T. S. Eliot</span>
   </div>
-</a>
-</div><!-- end button -->
 
-<a id="anchor-top" class="anchor" target="#"></a>
+  <div class="box flex flex-column center-children well-sm"><a class="ghost" href="#anchor-top">
+    <div class="welp-a txt-center cursive-font bg-lg-grey margin-vertical-1 center-children grey-hover blur-active transition-1 pad-horizontal-1">
+      <div class="opac-border-2 unblur-hover transition-p5 z-top"> </div>
+      <span class="box-text">back to top</span>
+      <span class="blur-hover transition-1">__ ___ _ </span>
+    </div>
+  </a>
+  </div><!-- end button -->
 
-<div id="background">
-  <img src="img/backgrounds/drought-1920x1280_tinified_blurred.jpg">
-</div>
+  <a id="anchor-top" class="anchor" target="#"></a>
+
+  <div id="background">
+    <img src="img/backgrounds/drought-1920x1280_tinified_blurred.jpg">
+  </div>
+
 </body>
 </html>
-
-
-     

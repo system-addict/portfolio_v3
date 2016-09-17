@@ -67,6 +67,17 @@ row-short, row-tall row-hero*/
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#373a3c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+/* WEBDEV ************************************************************************/
+.codepen-container{
+  min-width:372px;width:50vmax;max-width:100vw;/*match width to iframe container*/
+  padding:0 !important;
+  background:rgb(27,27,27);
+}
+/* GRAPHICS ************************************************************************/
+.max-height-vmin90{height:90vmin;max-height:90vmin;max-width:71.43vmin; }
+.max-height-vmin100{height:100vmin;max-height:100vmin;max-width:71.43vmin; }
+#protractor-display{margin:5vmin;}
+
 /* FOOTER ************************************************************************/
 footer{
 	height:20rem;/* untested */height:61.8vmin; 

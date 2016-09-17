@@ -4,12 +4,13 @@
 }
 */
 /*************************** use below**/
-#sub-text-2, #sub-text-2 *{ 
-      font-size:2em;
-      font-size:8.3vw;
-}
+#sub-text-2, #sub-text-2 *{ font-size:2em; font-size:8.3vw; }
 #sub-text-2 .title-subtext{top:2em !important;}
-
+#sub-text-3, #sub-text-3 * { font-size: 2em; font-size: 6.7vw; }
+#sub-text-3 .title-subtext{top:2.6em !important;}
+#sub-text-4, #sub-text-4 *{ font-size:2em; font-size:6.4vw; }
+#sub-text-4 .title-subtext{top:2.7em !important;}
+.symbol-text-1{font-size:16vw;position:relative;bottom:-200px;}
 .title-row { overflow: hidden;position:relative;height:30vmax; }
 
 /*html, body,*/
@@ -34,6 +35,7 @@
 .bump-left-3pr { margin-right: -2%; }
 .bump-right-18pr {   margin-left: 17%; }
 .bump-margin-left-m2pr{margin-left:-2%;}
+.bump-margin-left-m27pr{margin-left:-27%;}/*used in photog*/
 
 html body .title-container {
   margin: 0;
@@ -72,12 +74,11 @@ html body .title-container .text-wrap svg {
   font: bold 100px sans-serif;
   text-transform: uppercase;
 }
-html body #webdev .title-container .text-wrap svg .img-layer {
-  fill: url(#webdev-img); 
-}
-html body #compsci .title-container .text-wrap svg .img-layer {
-  fill: url(#compsci-img);
-}
+html body #webdev .title-container .text-wrap svg .img-layer { fill: url(#webdev-img); }
+html body #compsci .title-container .text-wrap svg .img-layer { fill: url(#compsci-img); }
+html body #gfx-dsgn .title-container .text-wrap svg .img-layer { fill: url(#gfx-dsgn); }
+html body #photog .title-container .text-wrap svg .img-layer { fill: url(#photog); }
+html body #photog .title-container .text-wrap svg { font: bold 120px sans-serif; }
 html body .title-container .text-wrap svg .gradient-layer {
   fill: url(#gr-overlay);/*applies to all svgs*/
 }
