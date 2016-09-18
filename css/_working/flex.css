@@ -24,6 +24,31 @@
 	align-content: center;
 	text-align:center;
 }
+
+
 .center-vertical{align-content:center;} /*add flex prefix*/
 .self-center{ align-self: center; text-align:center; } /*change to flex-self-center*/
 
+.flex-img{}
+.flex-img, .flex-img>div{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  align-content:center;
+  justify-content:space-around;
+}
+.flex-img *{
+  height:auto;
+  max-height:20vmax;
+  min-width:15vmax;
+  max-width:50vmax;
+}
+.flex-img>*{
+  margin:3vmax 0;
+  padding:1vmax;
+}
+.flex-img img{
+  minimum-width:200px;
+  
+  /*padding:2vmax !important;*/
+}
