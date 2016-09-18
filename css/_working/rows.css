@@ -18,7 +18,7 @@ row-short, row-tall row-hero*/
 .row-sml{ height:100px; /*arbitrary*/ height:31vmin; }
 .row-med{ height:200px; /*arbitrary*/ height:62vmin; }
 .row-lrg{ height:300px; /*arbitrary*/ height:93vmin; }
-.row-hero{}
+.row-hero{ vertical-align:middle;text-align: center;  }
 
 .v-padded{ padding-top:7em;padding-bottom:7em; }
 
