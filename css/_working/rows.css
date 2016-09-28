@@ -68,6 +68,68 @@ row-short, row-tall row-hero*/
 .max-height-vmin100{height:100vmin;max-height:100vmin;max-width:71.43vmin; }
 #protractor-display{margin:5vmin;}
 
+/* PHOTOG ************************************************************************/
+#photog-golden-1{background:url("../../img/_photog/ladybug.jpg") !important;
+				 background-size: cover !important;}
+#photog-golden-2{background:url("../../img/_photog/henna.jpg") !important;
+				 background-size: cover !important;}
+#photog-golden-3{background:url("../../img/_photog/bugolgi.jpg") !important;
+				 background-size: 100% 100% !important;  }
+#photog-golden-4{background:url("../../img/_photog/ice-drain.jpg") !important;
+				 background-size: cover !important;}
+#photog-golden-5{background:url("../../img/_photog/sparklers_tn.jpg") !important;
+ 				 background-size: cover !important;  
+ 				 /*background-position:0% 100%;*/
+ 				}
+#photog-golden-6{background:url("../../img/_photog/prisma_tn.jpg") !important;
+				 background-size: cover !important;
+				 overflow:visible !important;}
+#photog-golden-7{background:url("../../img/_photog/c.jpg") !important;
+				 background-size: cover !important;}
+#photog-golden-8{background:url("../../img/_photog/c.jpg") !important;
+				 background-size: cover !important;}
+
+#photog-spiral .f:not(.link){
+  transition: all 0.5s ease;
+  -webkit-filter: grayscale(.9);
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  transition: width 2s, height 2s; 
+}
+#photog-spiral .f:not(.link):hover,
+#photog-spiral .f:not(.link):focus
+{
+  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  width:105%;
+  height:105%;
+  /*z-index:99999 !important;*/
+}
+
+/*#photog-spiral .horizontal:hover,
+#photog-spiral .horizontal:focus{
+  overflow:visible !important;
+  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  width:200%;
+  height:200%;
+  z-index:99999 !important;
+}
+
+#photog-spiral .vertical:hover,
+#photog-spiral .vertical:focus{
+
+  -webkit-filter: grayscale(0);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  width:200%;
+  height:400%;
+  z-index:99999 !important;
+}
+*/
+
 /* FOOTER ************************************************************************/
 footer{
 	height:20rem;/* untested */height:61.8vmin; 
@@ -142,7 +204,7 @@ footer::after{
 /*	background: rgb(44,44,44);
 	background:rgba(44,44,44,0.4);
 	filter:blur(55px) grayscale(20%);
-	-webkit-filter:blur(5px) grayscale(20%);*/
+	-webkit-filter:blur(5px) grayscale(20%);* /
 */
 	/*background:filter(url(../../img/backgrounds/drought-1920x1280_tinified.jpg));*/
 	/*-webkit-background:filter(url('../../img/backgrounds/drought-1920x1280_tinified.jpg'));*/

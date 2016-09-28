@@ -67,11 +67,11 @@ footer a{}
     font-family: "Lato", "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
     font-weight: 400;
     font-size: 0.9rem;
-    line-spacing: 1.5;
-  white-space: nowrap;
-  box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
-    border-color: rgb(255, 255, 255)
-      text-shadow: 0px 1px rgba(0,0,0,0.2);
+    line-height: 1.5;
+	white-space: nowrap;
+	box-shadow: rgb(153, 153, 153) 0px 0px 0px 0px;
+    border-color: rgb(255, 255, 255);
+  	text-shadow: 0px 1px rgba(0,0,0,0.2);
 }
 .font-codepen a {
     text-decoration: none;

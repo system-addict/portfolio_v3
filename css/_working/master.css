@@ -1,11 +1,11 @@
 /* ******************************************************** */
-@import dev.css;
+/*@import dev.css;*/
 html,body{}
 html,body,body>* {margin:0;padding:0;}
 .row{margin-left:0;margin-right:0;} /*bootstart override*/
 main{ 
 	height:100%;
-	maximum-height:100%; 
+	/*max-height:100%; */
 	padding:0 !important;
 }
 
@@ -43,7 +43,7 @@ img{max-width: 100%;}
 .margin-horizontal-scale-20{ 
 	margin-left:20%;margin-right:20%;
 	margin-left:20vh;margin-right:20vh; }
-.margin-vertical-1{ margin-top: 3rem; margin:bottom: 3rem; }
+.margin-vertical-1{ margin-top: 3rem; margin-bottom: 3rem; }
 
 
 .pad-p5{padding:.5rem;}
@@ -61,30 +61,21 @@ img{max-width: 100%;}
 
 
 
-
+/* note: rgba border color should be supported.*/
 .border-leaf{
-
-	/*box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	*/
-	box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box;
+	box-sizing: content-box; /* borderbox;*/
+	-moz-box-sizing: content-box; /* borderbox;*/
+	-webkit-box-sizing: content-box; /* borderbox;*/
 	background: rgb(255,255,255); /* Old browsers */
 	background: -moz-linear-gradient(-45deg, rgb(255,255,255) 0%, rgb(216,216,216) 86%, rgb(243,243,243) 86%, rgb(243,243,243) 87%, rgb(237,237,237) 88%, rgb(255,255,255) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, rgb(255,255,255) 0%,rgb(216,216,216) 86%,rgb(243,243,243) 86%,rgb(243,243,243) 87%,rgb(237,237,237) 88%,rgb(255,255,255) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(135deg, rgb(255,255,255) 0%,rgb(216,216,216) 86%,rgb(243,243,243) 86%,rgb(243,243,243) 87%,rgb(237,237,237) 88%,rgb(255,255,255) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	border-width:4px 30px 4px 30px;
 	border-width:1vmin 0.1vmin 1vmin 0.1vmin;
 	border-style: solid;
 	border-color: #56c6d9 #56c6d9 #464545 #464545;
-	border-color: 
-	  rgba(0,0,0,0.7) 
-	  rgba(0,0,0,0.8)
-	  rgba(0,0,0,0.8) 
-	  rgba(0,0,0,0.6);
+	border-color: rgba(0,0,0,0.7) rgba(0,0,0,0.8) rgba(0,0,0,0.8) rgba(0,0,0,0.6);	
 	border-radius:0 120px 0 120px;
 	-moz-border-radius:0 120px 0 120px;
 	-webkit-border-radius:0 120px 0 120px;
@@ -113,15 +104,15 @@ img{max-width: 100%;}
 .opac-border{
 	background:rgba(0,0,0,0.9);
 	filter:blur(5px);
-	-webkit-filter:blur(5px);
+		-webkit-filter:blur(5px);
 	font-size:1rem;
 	line-height: normal;
 	min-width:101%;/*for blur*/
-	min-height:10px;	height:.5rem;height:.4vmin;	max-height:50px;
+	min-height:10px;	height:.5rem;height:.4vmin; 	max-height:50px;
 	position:absolute;
-	top:0;
-	left:0;
-	right:0;}
+	top:0; left:0; right:0;
+}
+
 .opac-border-2{
 	background:rgb(45,45,45); background:rgba(0,0,0,0.9);
 	filter:blur(5px);
@@ -129,17 +120,14 @@ img{max-width: 100%;}
 	font-size:.1rem !importrant;/*just incase*/
 	line-height: .1rem !important;/*just incase*/
 	min-width:101%;/*for blur*/
-  max-width:101%;
-	min-height:10px;	height:.5rem;height:.4vmin;	max-height:50px;
+  	max-width:101%;
+	min-height:10px;	height:.5rem;height:.4vmin;		max-height:50px;
 	position:absolute;
-/*   height:.4vmax; */
 	top:0;
 	left:0;
 	right:0;
-  margin:0 !important;
-/*   bottom:0; */
-/*   padding-top:-20%; */
-/*   padding-bottom:99%; */
+  	margin:0 !important;
+
   background-clip:content-box !important;
 }
 
@@ -167,22 +155,22 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
 
 .poster-image-a { 
   background:#1e90ff;
-  background: url("http://lorempixel.com/output/abstract-q-c-400-200-4.jpg");
+  /*background: url("http://lorempixel.com/output/abstract-q-c-400-200-4.jpg");*/
   background: url("../../img/overlay/frame02p1.png");
 }
 .poster-image-b {  
   background:#1e90ff;
-  background: url("http://lorempixel.com/output/abstract-q-c-400-200-1.jpg");
+  /*background: url("http://lorempixel.com/output/abstract-q-c-400-200-1.jpg");*/
   background: url("../../img/overlay/frame04p1.png");
 }
 .poster-image-c {  
   background:#1e90ff;
-  background: url("http://lorempixel.com/output/abstract-q-c-400-200-5.jpg");
+  /*background: url("http://lorempixel.com/output/abstract-q-c-400-200-5.jpg");*/
   background: url("../../img/overlay/frame03p1.png");
 }
 .poster-image-big-d {  
   background:#1e90ff;
-  background: url("http://lorempixel.com/output/abstract-q-g-400-200-3.jpg");
+  /*background: url("http://lorempixel.com/output/abstract-q-g-400-200-3.jpg");*/
   background: url("../../img/overlay/frame01p1.png");
 }
 
@@ -190,8 +178,7 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
   position:absolute;
   top:0;bottom:0;left:0;right:0;
   padding: 3.5rem;
-/*padding-left:2rem;
-  padding-right:2rem; */
+/*padding-left:2rem; padding-right:2rem; */
   text-align:center;
   display: flex;
   align-content: center;

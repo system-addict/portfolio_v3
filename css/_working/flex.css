@@ -7,7 +7,7 @@
   justify-content: space-around;
 }
 .flex-base{align-items:baseline;}
-.flex-column{flex-direction: column;}
+.flex-column{flex-direction: column; -webkit-box-orient: vertical;}
 .flex-jc-space-around{justify-content:space-around !important;}
 .flex-wrap{flex-wrap:wrap;}
 .center-children{
@@ -48,7 +48,7 @@
   padding:1vmax;
 }
 .flex-img img{
-  minimum-width:200px;
+  min-width:200px;
   
   /*padding:2vmax !important;*/
 }
@@ -73,6 +73,7 @@
   flex-basis:0 !important;
 }
 
+/* FLEX COLUMNS ************************************************ */
 .fc1, .f-col_1{ flex-grow:1;flex-basis:0 !important; }
 .fc2, .f-col_2{ flex-grow:2;flex-basis:0 !important; }
 .fc3, .f-col_3{ flex-grow:3;flex-basis:0 !important; }
@@ -85,3 +86,86 @@
 .fc10, .f-col_10{ flex-grow:10;flex-basis:0 !important; }
 .fc11, .f-col_11{ flex-grow:11;flex-basis:0 !important; }
 .fc12, .f-col_12{ flex-grow:12;flex-basis:0 !important; }
+
+
+
+/* GOLDEN RATIO PICTURES ************************************************ */
+
+
+
+.golden-flex-container{height:38.2vw;background:black; } /*container height*/
+.golden-flex-container,.golden-flex-container *{
+  font-size:2vw;
+  flex-basis:100%;
+  margin:0;
+  display:flex;
+  align-content:center;  
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+/* removing this code creates a spiral based on halves.*/
+  .f{flex-grow:0.68;}
+  .golden-flex-container >*:not(.f),
+  .golden-flex-container *>*:not(.f){ flex-shrink:1.62; }
+/*******************************************************/
+
+.golden-flex-container .g-col>*,
+.golden-flex-container .g-col-rev>*{ width:100%; }
+
+/* purely for tile example*/
+.golden-flex-container .g-col>.f,
+.golden-flex-container .g-col-rev>.f{ 
+  /*background:url("https://unsplash.it/900/900");*/
+}
+
+/* specicifity soley for additional border info
+.golden-flex-container .g-row>*,
+.golden-flex-container .g-row-rev>, */
+.g-row>*,
+.g-row-rev>*{ 
+  height:100%;
+}
+/* specicifity soley for additional border info
+.golden-flex-container .f,
+.golden-flex-container .g-row>.f,
+.golden-flex-container .g-row-rev>.f, */
+.g-row>.f,
+.g-row-rev>.f{ 
+  /*background:url("https://unsplash.it/800/900");*/
+}
+.g-col{flex-direction:column; -webkit-box-orient: vertical;}
+.g-col-rev{flex-direction:column-reverse;}
+.g-row{flex-direction:row;}
+.g-row-rev{flex-direction:row-reverse;}
+
+
+@media Unused{
+      .g-col-rev,
+      .g-col{display:flex;flex-grow:1.618;flex-direction:column; -webkit-box-orient: vertical;}
+      /*.g-col-rev{display:flex;flex-grow:1.618;flex-direction:column-reverse;}*/
+      .g-col-rev div:nth-of-type(1),
+      .g-row-rev div:nth-of-type(1){order:2;}
+      .g-col-rev div:nth-of-type(2),
+      .g-row-rev div:nth-of-type(2){order:1;}
+      .g-row-rev,
+      .g-row{display:flex;flex-grow:1.618;flex-direction:row;}
+      /*.g-row-rev{display:flex;flex-grow:1.618;flex-direction:row-reverse;}*/
+}
+
+.golden-flex-container,.f{/**** border****/
+  box-sizing:border-box;
+/*   border:1px solid rgba(255,255,255,0.1); */
+  border:1px solid rgba(178,169,196,0.6);
+}
+
+
+
+.f{/**** box shadow****/
+/*  background-size:cover !important;*/
+  flex-grow:1.618;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.4), 
+              inset 0 0 6px rgba(0,0,0,0.4);    
+}
+

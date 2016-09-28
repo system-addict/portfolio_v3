@@ -36,7 +36,7 @@
       HERO  
   ********************************************************************************** -->
   <div id="hero-main" class="row row1 hero "><!-- hero 1 panel -->
-    <div class="col-xs-12 txt flex flex-column center-children hero dv" id="hero-main">
+    <div class="col-xs-12 txt flex flex-column center-children hero dv" >
       <p id="hero-main-txt">Can an image create a hero?</p>
     </div>
   </div>
@@ -98,25 +98,15 @@
                  >
           <image xlink:href="img/headers/matrix-turning-point.gif" preserveAspectRatio="xMaxYMax " width="50%" height="50%"/>
         </pattern>
-        <text text-anchor="middle"
-              x="50%"
-              y="50%"
-              dy=".35em"
-              class="img-layer">
-          WEBDEV
-        </text>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em"
+              class="img-layer" fill="url(#webdev-img)">WEBDEV</text>
         <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
           <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
           <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
           <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
         </linearGradient>
-        <text text-anchor="middle"
-              x="50%"
-              y="50%"
-              dy=".35em"
-              class="gradient-layer">
-          WEBDEV
-        </text>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em"
+              class="gradient-layer" fill="url(#gr-overlay)">WEBDEV</text>
       </svg>
     </div>
   </div>
@@ -137,10 +127,10 @@
 
   <div id="clients-webdev" class="row border-leaf flex-img"><!-- clients -->
       <div class=""><!-- Groove Nation -->
-          <img src="img/clients/client-logo-GN_name_trans.png" />
+          <img src="img/clients/client-logo-GN_name_trans.png" alt="Groove Nation's Client Logo" />
       </div>
       <div ><!-- Kennedy Violins -->
-          <img src="img/clients/client-logo-KV_name_trans.png" />
+          <img src="img/clients/client-logo-KV_name_trans.png" alt="Kennedy Violin's Client Logo "/>
       </div>
   </div>
   <div class="row row-med border-small-bottom bg-purple-trans64 pad-horizontal-2-2">fillerbefilled</div>
@@ -160,15 +150,11 @@
                  patternUnits="userSpaceOnUse"
                  width="109%" height="90%"
                  >
-          <image  xlink:href="http://66.media.tumblr.com/tumblr_lw1czb7J3F1qghl49o1_r3_500.gif" preserveAspectRatio="xMaxYMax " width="60%" height="60%"/>
+          <image  xlink:href="img/headers/pi-restate-my-assumptions.gif" preserveAspectRatio="xMaxYMax " width="60%" height="60%"/>
         </pattern>
-        <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="img-layer"> COMPSCI </text>
-  <!--       <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
-          <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
-          <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
-          <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
-        </linearGradient> -->
-      <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="gradient-layer"> COMPSCI </text>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="img-layer" fill="url(#compsci-img)">COMPSCI</text>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em"
+              class="gradient-layer" fill="url(#gr-overlay)">COMPSCI</text>
       </svg>
     </div>
   </div>
@@ -196,33 +182,19 @@
       <svg width="100%" viewBox="10 0 550 100">
         <pattern 
                  id="gfx-dsgn-img" 
-                 viewBox="175 4 300 36"
+                 viewBox="176 4 300 36"
                  preserveAspectRatio="xMaxYMax slice"
                  patternUnits="userSpaceOnUse"
                  width="190%" height="90%"
                  >
           <image  
-          xlink:href="img/headers/protector-a-promise-is-made.gif" 
-          xlink:href="http://i.imgur.com/QZhajmU.gif" 
-          preserveAspectRatio="xMaxYMax " width="60%" height="60%"/>
+          xlink:href="img/headers/protector-a-promise-is-made_delete.gif"  
+          preserveAspectRatio="xMaxYMax" width="60%" height="60%"/>
         </pattern>
-        <text text-anchor="middle"
-              x="50%"
-              y="50%"
-              dy=".35em"
-              class="img-layer"><tspan text-anchor="middle">GFX</tspan><tspan class="symbol-text-1" text-anchor="middle">/</tspan><tspan text-anchor="middle">DSGN</tspan></text>
-<!--         <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
-          <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
-          <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
-          <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
-        </linearGradient> -->
-        <text text-anchor="middle"
-              x="50%"
-              y="50%"
-              dy=".35em"
-              class="gradient-layer">
-          GFX<tspan class="symbol-text-1">/</tspan>DSGN
-        </text>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em" 
+              class="img-layer" fill="url(#gfx-dsgn-img)">GFX/DSGN</text>
+         <text text-anchor="middle" x="50%" y="50%" dy=".35em"
+              class="gradient-layer" fill="url(#gr-overlay)">GFX/DSGN</text>
       </svg>
     </div>
   </div>
@@ -239,8 +211,8 @@
     </div>
     <div class="f-col4_7">
         <div class="2020container"><div id="protractor-display" class="twentytwenty-container max-height-vmin90">
-           <img src="img/gfx-dsgn/SxS_protector_800x1120.png" class=""/>
-           <img src="img/gfx-dsgn/SxS_protractor4p2_800x1120.png" class=""/>
+           <img src="img/gfx-dsgn/SxS_protector_800x1120.png" alt="The Protector DVD cover"/>
+           <img src="img/gfx-dsgn/SxS_protractor4p2_800x1120.png" alt="The Protractor mock poster"/>
         </div></div>
         <script>
           $(window).load(function(){
@@ -272,27 +244,14 @@
                  patternUnits="userSpaceOnUse"
                  width="104%" height="93%"
                  >
-          <image  
+          <image 
           xlink:href="img/headers/adaptation-listening-eyes.gif" 
-          xlink:href="http://i.imgur.com/qxjkFiJ.gif" 
           preserveAspectRatio="xMaxYMax" width="60%" height="60%"/>
         </pattern>
-        <text text-anchor="middle"
-              x="50%"
-              y="50%"
-              dy=".35em"
-              class="img-layer">PHOTOG</text>
-<!--         <linearGradient id="gr-overlay" x1="0" y1="0" x2="100%" y2="100%">
-          <stop stop-color="hsla(50, 100%, 70%, 0.5)" offset="10%"/>
-          <stop stop-color="hsla(200, 100%, 60%, 0.5)" offset="50%"/>
-          <stop stop-color="hsla(320, 100%, 50%, 0.5)" offset="90%"/>
-        </linearGradient> -->
-        <text text-anchor="middle"
-              x="50%"
-              y="50%"
-              dy=".35em"
-              class="gradient-layer">PHOTOG
-        </text>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em" 
+              class="img-layer" fill="url(#photog-img)">PHOTOG</text>
+        <text text-anchor="middle" x="50%" y="50%" dy=".35em"
+              class="gradient-layer" fill="url(#gr-overlay)">PHOTOG</text>
       </svg>
     </div>
   </div>
@@ -303,12 +262,40 @@
     </div>
   </div><!--end title row-->
 
+  <div id="photog-spiral" class="golden-flex-container g-row">
+  <div id="photog-golden-1" class="f"></div> 
+  <div class="g-col-rev">
+    <div id="photog-golden-2" class="f"></div>
+    <div class="g-row-rev">
+      <div id="photog-golden-3" class="f"></div>
+      <div class="g-col">
+        <div id="photog-golden-4" class="f"></div>
+        <div class="g-row">
+          <div id="photog-golden-5" class="f small vertical"></div>
+          <div class="g-col-rev">
+            <div id="photog-golden-6" class="f small horizontal"></div>
+            <div class="g-row-rev">
+              <div id="photog-golden-7" class="f link">
+                <a href="" alt="behance" ></a>
+              </div>
+              <div id="photog-golden-8" class="f link">
+                <a href="https://pixabay.com/en/users/parkdevelops-2774832/" alt="pixabay" ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <div id="clients-photog" class="row border-leaf flex-img"><!-- clients -->
       <div class=""><!-- ARKH -->
-          <img src="img/clients/client-logo-ARKH_color.png" />
+          <img src="img/clients/client-logo-ARKH_color.png" alt="ARKH Client Logo"/>
       </div>
       <div ><!-- Google Maps Local Guide -->
-          <img src="img/achievements/google-local-guide.gif" />
+          <img src="img/achievements/google-local-guide.gif" alt="Google Local Guide Achievement Award: Level 3 50+ Points."/>
       </div>
   </div>
   <div class="row row-med border-small-bottom bg-purple-trans64 pad-horizontal-2-2">fillerbefilled</div>
@@ -381,8 +368,8 @@
   <a id="anchor-top" class="anchor" target="#"></a>
 
   <div id="background">
-    <img src="img/backgrounds/drought-1920x1280_tinified_blurred.jpg">
+    <img src="img/backgrounds/drought-1920x1280_tinified_blurred.jpg" alt="Page Background Image: Cracked desert floor with feather in middle.">
   </div>
-
+</div><!-- end footer -->
 </body>
 </html>

@@ -10,7 +10,7 @@
 #sub-text-3 .title-subtext{top:2.6em !important;}
 #sub-text-4, #sub-text-4 *{ font-size:2em; font-size:6.4vw; }
 #sub-text-4 .title-subtext{top:2.7em !important;}
-.symbol-text-1{font-size:11vw;position:relative;text-anchor: middle;}
+.symbol-text-1{font-size:11vw;position:relative;}
 .title-row { overflow: hidden;position:relative;height:30vmax; }
 
 /*html, body,*/
@@ -70,19 +70,20 @@ html body .title-container .text-wrap {
 html body .title-container .text-wrap svg {
   position: relative;
   width: 100%;
-  height: auto;
+  /*height: auto;*/
   font: bold 100px sans-serif;
   text-transform: uppercase;
 }
-html body #webdev .title-container .text-wrap svg .img-layer { fill: url(#webdev-img); }
-html body #compsci .title-container .text-wrap svg .img-layer { fill: url(#compsci-img); }
-html body #gfx-dsgn .title-container .text-wrap svg .img-layer { fill: url(#gfx-dsgn-img); }
-html body #gfx-dsgn .title-container .text-wrap svg { font: bold 93px sans-serif; }
-html body #photog .title-container .text-wrap svg .img-layer { fill: url(#photog-img); }
-html body #photog .title-container .text-wrap svg { font: bold 120px sans-serif; }
-html body .title-container .text-wrap svg .gradient-layer {
-  fill: url(#gr-overlay);/*applies to all svgs*/
-}
+
+/*html body .title-container .text-wrap svg .gradient-layer { fill: url(#gr-overlay);}*/
+/*all svgs*/
+/*html body #webdev .title-container .text-wrap svg .img-layer { fill: url(#webdev-img); }*/
+/*html body #compsci .title-container .text-wrap svg .img-layer { fill: url(#compsci-img); }*/
+/*html body #gfx-dsgn .title-container .text-wrap svg .img-layer { fill: url(#gfx-dsgn-img); }*/
+/*html body #gfx-dsgn .title-container .text-wrap svg { font: bold 93px sans-serif; }*/
+/*html body #photog .title-container .text-wrap svg .img-layer { fill: url(#photog-img); }*/
+/*html body #photog .title-container .text-wrap svg { font: bold 120px sans-serif; }*/
+
 .sub-text-container{ position:static; }
 html body .title-subtext {
   position: absolute;
