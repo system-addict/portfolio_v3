@@ -23,7 +23,14 @@
 	background:rgb(41, 9, 73);
 	background:rgba(41, 9, 73, 0.64);
 }
-
+.bg-lg-grey{
+	background-color:rgb(144,144,144); 
+	background-color:rgba(144,144,144,0.4);
+}
+.bg-grey-trans60{
+	background:#c4c4c4;
+	background:rgba(196, 196, 196, 0.6);
+}
 .bg-grey-trans80{
 	background:#c4c4c4;
 	background:rgba(196, 196, 196, 0.8);

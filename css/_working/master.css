@@ -21,7 +21,7 @@ img{max-width: 100%;}
 /* need for sizing %s*/
 
 
-.bg-lg-grey{background-color:rgb(144,144,144); background-color:rgba(144,144,144,0.4);}
+
 .border-small-top{
 	border-color:black;	/*border-color:rgb(44,44,44); */
 	border-top:solid;
@@ -219,7 +219,7 @@ clip-path: polygon(0% 0%, 0% 100%, 20% 100%, 20% 16%, 80% 16%, 80% 84%, 20% 84%,
   height:6.4vw;
 	min-height: 6.4rem;
 	flex-direction: column;
-	font-weight:900;
+	font-weight:500;
 	font-size:6rem;font-size:6vw;
 	line-height: .2rem;line-height:.2vw;
 	position:relative;/*nec for first child opac-border*/

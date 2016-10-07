@@ -13,6 +13,12 @@
 /**********************************************************************************
 	ROW HEIGHT CLASSES:
 **********************************************************************************/
+.post-title{
+	position:relative;
+	top:-7vmax;
+	margin-bottom:2vmax;
+	padding: 4vmax;
+}
 /* TO MANAGE ROW HEIGHT, should prob do something like:
 row-short, row-tall row-hero*/
 .row-sml{ height:100px; /*arbitrary*/ height:31vmin; }
@@ -21,6 +27,7 @@ row-short, row-tall row-hero*/
 .row-hero{ vertical-align:middle;text-align: center;  }
 
 .v-padded{ padding-top:7em;padding-bottom:7em; }
+
 
 /* SCAFFOLDING: ROWS */
 .row1{}
@@ -185,7 +192,7 @@ footer::after{
 
 #background, #background img{
 	position:fixed;
-	top: 0;left: 0;bottom: 0;right: 0;
+	top: 0;left: 0;bottom: -200px;right: 0;
 	height:135%;width:100%;
 	background-color:rgb(44,44,44);
 	/*filter:blur(15px) grayscale(35%);
